@@ -262,6 +262,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     compile "com.android.support:customtabs:23.3.0"
     compile "com.google.gms:google-services:+"
     compile "com.google.android.gms:play-services-tagmanager:+"
@@ -271,6 +272,7 @@ dependencies {
     compile "com.google.firebase:firebase-config:+"
     compile "com.google.firebase:firebase-perf:+"
     compile "com.firebaseui:firebase-ui-auth:3.2.2"
+   
 
     // Required only if Facebook login support is required
     compile('com.facebook.android:facebook-android-sdk:4.27.0')
